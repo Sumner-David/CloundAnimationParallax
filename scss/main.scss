@@ -3,8 +3,49 @@
     padding:0;
     margin:0;
     box-sizing:border-box;
+    font-family:Poppins,sans-serif
 }
 
-body {
-   
+.banner {
+    position:relative;
+    width:100%;
+    height:100vh;
+    background:url('../images/bg.jpg');
+    background-size:cover;
+    background-position:bottom;
+
+}
+
+.banner .clouds {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner .clouds img {
+    position:absolute;
+    bottom:0;
+    max-width:100%;
+    animation: animate calc(8s * var(--i)) linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform:translateX(100%)
+    }
+}
+
+section{
+    position: relative;
+    padding:75px 100px;
+    h2 {
+        font-size: 2.5em;
+        margin-bottom:20pxl
+    }
 }
